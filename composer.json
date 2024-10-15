@@ -1,0 +1,12 @@
+{
+    "name": "jwrobbs/wpmb-wordpress-conditions-for-bricks",
+    "description": "Custom Bricks conditions based on WordPress conditions like is_home (WordPress plugin).",
+    "type": "wordpress-plugin",
+	"version": "0.1.0",
+    "require": {},
+    "autoload": {
+        "classmap": [
+            "src/"
+		]
+    }
+}
