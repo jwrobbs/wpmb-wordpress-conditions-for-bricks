@@ -32,7 +32,7 @@ class Is_Front_Page {
 		$options[] = array(
 			'key'     => 'is_front_page',
 			'label'   => 'Is Front Page',
-			'group'   => 'jwr_wp_conditions',
+			'group'   => $this->group,
 			'compare' => array(
 				'type'        => 'select',
 				'options'     => array(

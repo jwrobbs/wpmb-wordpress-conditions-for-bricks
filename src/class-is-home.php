@@ -32,7 +32,7 @@ class Is_Home {
 		$options[] = array(
 			'key'     => 'is_home_page',
 			'label'   => 'Is Home Page',
-			'group'   => 'jwr_wp_conditions',
+			'group'   => $this->group,
 			'compare' => array(
 				'type'        => 'select',
 				'options'     => array(
