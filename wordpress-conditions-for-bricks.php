@@ -14,3 +14,16 @@
 namespace WPMB_WordPress_Conditions_for_Bricks;
 
 defined( 'ABSPATH' ) || exit;
+
+// Create custom group for WordPress conditions.
+add_filter(
+	'bricks/conditions/groups',
+	function ( $groups ) {
+		$groups['wpmb_wordpress_conditions'] = __( 'WordPress conditions', 'myplugin' );
+		return $groups;
+	}
+);
+
+// Instantiate the conditions.
+new src\Is_Front_Page();
+new src\Is_Home();
